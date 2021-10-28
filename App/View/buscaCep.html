@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cep</title>
+        <!-- arquivos bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+       <!-- arquivos jquery para uso de mask -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.11.2/jquery.mask.min.js" integrity="sha512-Y/GIYsd+LaQm6bGysIClyez2HGCIN1yrs94wUrHoRAD5RSURkqqVQEU6mM51O90hqS80ABFTGtiDpSXd2O05nw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+    <style>
+        li{margin-top:12px;}
+    </style>
+</head>
+<body>
+  <div class="container w-60 mt-5 pb-4 px-2 ">
+    <h3 class="text-center text-uppercase mb-2">buscar cep</h3>
+    <p class="text-center text-capitalize text-danger">verifique se todos os campos estão corretos caso o sistema não realize a busca!</p>
+    <form action="" method="POST" class="">
+      <div class="py-2">
+         <label for="rua">Logradouro</label> 
+          <input type="text" id="rua"class="form-control" placeholder="Rua">
+          <span style="text-transform: lowercase; font-family:'italic';">Ex: Presidente de alencar...</span>
+      </div>
+      <div class="py-2">
+         <label for="cidade">Cidade</label> 
+          <input type="text" id="cidade"class="form-control" placeholder="Cidade">
+      </div>
+      <div class="py-2">
+         <label for="estado">Estado</label> 
+         <input type="text" id="estado"class="form-control " placeholder="Estado">
+         <span style="text-transform: lowercase; font-family:'italic';">Digite somente as duas siglas do estado ex: sp!</span>
+        </div>
+      <div class="py-2">
+        <button type="button"id="btnCep" class="btn btn-secondary text-capitalize">buscar cep</button>
+      </div>
+    </form>
+  </div>
+  <div class="container text-end text-capitalize">
+    <a href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blanck">não conseguiu realizar a consulta? <strong> Clique Aqui!</strong></a>
+    </div>
+
+  <div class="container mx-2 ">
+    <ul class="list-group-none bg-ligth pt-2" id="list">
+
+    </ul>
+  </div>
+
+</body>
+
+  <!-- <script src="App/Public/Js/mask.js"></script> -->
+  <script src="App/Public/Js/buscaCep.js"></script>
+</html>
+
+
+
+
+
